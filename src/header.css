@@ -1,0 +1,44 @@
+.header {
+    height: 100vh;
+    width: 9vw;
+    padding: 4rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: rgb(224, 224, 224) 1px solid;
+}
+
+.header .header__logo {
+    /* logo 임시로 사이즈만 정해놓음 */
+    width: 60px;
+    height: 60px;
+    background-color: #FFDF40;
+    cursor: pointer;
+}
+
+.header .header__navigation {
+    font-weight: 900;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    bottom: -4rem;
+}
+
+.header .header__text {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.header .header__text span:nth-child(2) {
+    font-weight: 700;
+    color : #FFDF40;
+}
+
+.header .header-rotate {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
