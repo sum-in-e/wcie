@@ -12,14 +12,6 @@
     border-right: rgb(224, 224, 224) 1px solid;
 }
 
-.header .header__logo {
-    /* logo 임시로 사이즈만 정해놓음 */
-    width: 60px;
-    height: 60px;
-    background-color: #FFDF40;
-    cursor: pointer;
-}
-
 .header .header__navigation {
     font-weight: 900;
     font-size: 1.2rem;

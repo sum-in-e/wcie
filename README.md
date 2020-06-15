@@ -1,5 +1,5 @@
 # 웹사이트 클론코딩
 
-HTML, CSS
+HTML, CSS -> 정적인 반응형 웹사이트
 
-웹 사이트 : [https://www.wcie.fr]
+URL : [https://www.wcie.fr]

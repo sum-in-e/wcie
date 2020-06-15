@@ -1,11 +1,11 @@
 main {
     padding-left: 9vw;
+    padding-bottom: 10vh;
 }
 
 main .grids {
     padding-left: 1.5vw;
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(9, calc((98.5vw - 9vw) / 9 - 1.5vw));
     grid-template-rows: repeat(22, calc((98.5vw - 9vw) / 9 - 1.5vw));
@@ -19,14 +19,13 @@ main .grids {
 }
 
 /* -----grid__content--hidden----- */
-
-.grids .grid__content--hidden img {
+.grids .grid__content--hidden .grid__img {
     width: 100%;
     height: 100%;
     transition : all 0.5s;
 }
 
-.grids .grid__content .label {
+.grids .grid__content .grid__label {
     padding : 0.7rem 0.4rem ;
     background-color: white;
     text-transform: uppercase;
@@ -40,32 +39,33 @@ main .grids {
     z-index: 10;
 }
 
-.grids .grid__content--hidden .hidden-item {
+.grids .grid__content--hidden .grid--hidden-item {
     display: none;
 }
 
-.grids .grid__content .hidden-item span:first-child {
+.grids .grid__content .grid--hidden-item span:first-child {
     font-size: 2.5rem;
     font-weight: 900;
     color: white;
     margin-bottom: 1rem;
 }
 
-.grids .grid__content .hidden-item span:last-child {
+.grids .grid__content .grid--hidden-item span:last-child {
     font-size: 0.8rem;
-    color : rgb(80, 80, 80);
+    font-weight: 700;
+    color : rgb(121, 121, 121);
     text-transform: uppercase;
 }
 
-.grids .grid__content--hidden:hover img {
+.grids .grid__content--hidden:hover .grid__img {
     transition: transform ease-in-out 0.3s;
     transform: scale(1.2, 1.2);
 }
 
-.grids .grid__content--hidden:hover .hidden-item {
+.grids .grid__content--hidden:hover .grid--hidden-item {
     width: 100%;
     height: 100%;
-    padding : 10rem;
+    padding : 7rem;
     text-align: center;
     background-color: rgb(0, 0, 0);
     opacity: 85%;
@@ -78,6 +78,7 @@ main .grids {
     top : 0;
     left : 0;
     animation: hidden-in 0.4s linear;
+    cursor: url(../src/images/cursor.cur), auto;
 }
 @keyframes hidden-in {
     0% {
@@ -94,9 +95,8 @@ main .grids {
     }
 }
 
-
-/* -----content-1st----- */
-.grids .grid__content-1st {
+/* -----content--1st----- */
+.grids .grid__content--1st {
     background-color: #FFDF40;
     padding : 3rem;
     grid-column: 1 / 5;
@@ -106,12 +106,12 @@ main .grids {
     justify-content: space-between;
 }
 
-.grids .grid__content-1st .title {
+.grids .grid__content--1st .title {
     font-weight: 900;
     font-size: 4rem;
 }
 
-.grids .grid__content-1st .button {
+.grids .grid__content--1st .button {
     width: 4rem;
     height: 4rem;
     background-color: white;
@@ -126,30 +126,30 @@ main .grids {
     transition-delay: 0.1s;
 }
 
-.grids .grid__content-1st:hover .button {
+.grids .grid__content--1st:hover .button {
     transition: transform ease-in-out 0.3s;
     transform: scale(1.2, 1.2);
 }
 
-.grids .grid__content-1st:hover .button span {
+.grids .grid__content--1st:hover .button span {
     transition: transform ease-in-out 0.1s;
     transform: translateX(45px);
 }
 
-/* -----content-2nd----- */
-.grids .grid__content-2nd {
+/* -----content--2nd----- */
+.grids .grid__content--2nd {
     grid-column: 5 / span 5;
     grid-row: 2 / span 4;
 }
 
-/* -----content-3rd----- */
-.grids .grid__content-3rd {
+/* -----content--3rd----- */
+.grids .grid__content--3rd {
     grid-column: 2 / span 3;
     grid-row: 5 / span 3;
 }
 
-/* -----content-4th----- */
-.grids .grid__content-4th {
+/* -----content--4th----- */
+.grids .grid__content--4th {
     grid-column: 2 / span 3;
     grid-row: 8 / span 2;
     font-size: 4rem;
@@ -158,19 +158,19 @@ main .grids {
     padding : 1rem 0;
 }
 
-.grids .grid__content-4th div {
+.grids .grid__content--4th div {
     color : #FFDF40;
     padding-top: 2rem;
 }
 
-/* -----content-5th----- */
-.grids .grid__content-5th {
+/* -----content--5th----- */
+.grids .grid__content--5th {
     grid-column: 5 / span 4;
     grid-row: 6 / span 4;
 }
 
-/* -----content-6th----- */
-.grids .grid__content-6th {
+/* -----content--6th----- */
+.grids .grid__content--6th {
     grid-column: 1 / span 3;
     grid-row: 10 / span 4;
     background-color: black;
@@ -179,38 +179,163 @@ main .grids {
     text-align: center;
 }
 
-.grids .grid__content-6th .title {
+.grid__content--6th .title {
     font-size: 0.8rem;
     font-weight: 700;
-    color : rgb(80, 80, 80);
+    color : rgb(161, 161, 161);
     text-transform: uppercase;
     padding-bottom: 1.5rem;
     line-height: 1rem;
 }
 
-.grids .grid__content-6th .subtitle {
+.grid__content--6th .subtitle {
     font-size: 2.3rem;
     font-weight: 900;
     padding-bottom: 1rem;
 }
 
-.grids .grid__content-6th .ellipse {
+.grid__content--6th .ellipse {
     width: 20rem;
     height: 20rem;
     border-radius: 10rem;
     background-color: #FFDF40;
     position: relative;
+    overflow: hidden;
+    transform: rotate(-30deg);
 }
 
-.grids .grid__content-6th .ellipse .ellipse__icon {
+.grid__content--6th .ellipse .ellipse__icon {
     font-size: 20rem;
     position: absolute;
-    top:0;
-    left: 0;
+    transition : all 0.4s;
 }
 
-/* -----content-7th----- */
-.grids .grid__content-7th {
+.grid__content--6th .ellipse .ellipse__icon-right {
+    top:-55px;
+    left: -27px;
+}
+
+.grid__content--6th .ellipse .ellipse__icon-left {
+    top: 55px;
+    right: -27px;
+}
+
+.grids .grid__content--6th:hover .ellipse__icon-right {
+    transition: transform ease-in-out 0.4s;
+    transform: translateX(30px);
+}
+
+.grids .grid__content--6th:hover .ellipse__icon-left {
+    transition: transform ease-in-out 0.4s;
+    transform: translateX(-30px);
+}
+
+/* -----content--7th----- */
+.grids .grid__content--7th {
     grid-column: 4 / span 4;
     grid-row: 10 / span 4;
+}
+
+/* -----content--8th----- */
+.grids .grid__content--8th {
+    grid-column: 2 / span 3;
+    grid-row: 14 / span 3;
+}
+
+/* -----content--9th----- */
+.grids .grid__content--9th {
+    grid-column: 5 / span 2;
+    grid-row: 14 / span 2;
+}
+
+/* -----content-news----- */
+.grids .grid--content-news {
+    background-color: rgb(245, 245, 245);
+    padding : 2rem;
+}
+
+.grids .grid--content-news p {
+    padding-bottom: 0.5rem;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.grids .grid--content-news .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* -----content--10th----- */
+.grids .grid__content--10th {
+    grid-column: 7 / span 2;
+    grid-row: 14 / span 2;
+    background-color: #FFDF40;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid__content--10th .subtitle {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+}
+
+.grid__content--10th .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.grid__content--10th .year {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -0.5rem;
+}
+
+.grid__content--10th .year .year-left {
+    font-size: 12em;
+    font-weight: 900;
+}
+
+.grid__content--10th .year .year-right {
+    background-color: black;
+    padding: 3rem;
+    width: 7rem;
+    height: 8.5rem;
+    border-radius: 50%;
+    color : #FFDF40;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----content--11th----- */
+.grids .grid__content--11th {
+    grid-column: 5 / span 5;
+    grid-row: 16 / span 4;
+}
+
+/* -----content--12th----- */
+.grids .grid__content--12th {
+    grid-column: 1 / span 4;
+    grid-row: 17 / span 4;
+}
+
+/* -----content--13th----- */
+.grids .grid__content--13th {
+    grid-column: 5 / span 3;
+    grid-row: 20 / span 3;
+}
+
+/* -----content--14th----- */
+.grids .grid__content--14th {
+    grid-column: -3 / span 2;
+    grid-row: 20 / span 2;
 }

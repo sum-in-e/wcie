@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9a5c9ca791.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&family=Tenor+Sans&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Tenor+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css">
     <title>wcie.fr</title>
@@ -13,7 +13,9 @@
 
 <body>
     <header class="header">
-        <div class="header__logo">
+        <div class="header__logo logo">
+            <span class="header__logo--bar logo--bar">ㅡ</span>
+            <h1 class="header__logo--w logo--w">W</h1>
         </div>
         <nav class="header__navigation header-rotate">
             <ul>
@@ -28,7 +30,7 @@
     </header>
     <main>
         <div class="grids">
-            <section class="grid__content grid__content-1st">
+            <section class="grid__content grid__content--1st">
                 <h1 class="title">L’agence stratégique et créative dédiée aux marques.</h1>
                 <div class="button">
                     <span>
@@ -36,41 +38,44 @@
                     </span>
                 </div>
             </section>
-            <section class="grid__content grid__content--hidden grid__content-2nd">
-                <img src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            <section class="grid__content grid__content--2nd grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
                     alt="2nd">
-                <span class="label">branding</span>
-                <div class="hidden-item">
+                <span class="grid__label">branding</span>
+                <div class="grid--hidden-item">
                     <span>Rend-Fort</span>
                     <span>top teams</span>
                 </div>
             </section>
-            <section class="grid__content grid__content--hidden grid__content-3rd">
-                <img src="https://images.unsplash.com/photo-1575653932700-fcc34df03761?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=937&q=80"
+            <section class="grid__content grid__content--3rd grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1575653932700-fcc34df03761?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=937&q=80"
                     alt="3rd">
-                <div class="hidden-item">
+                <div class="grid--hidden-item">
                     <span>Les lettres ouvertes de Denis Gancel et Gilles Deléris
                     </span>
                     <span>Correspondances de donfines</span>
                 </div>
             </section>
-            <section class="grid__content grid__content-4th">
+            <section class="grid__content grid__content--4th">
                 <h1>Mixing</h1>
                 <div>
                     <p>Advertising</p>
                     <p>& Content</p>
                 </div>
             </section>
-            <section class="grid__content grid__content--hidden grid__content-5th">
-                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1930&q=80"
+            <section class="grid__content grid__content--5th grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1930&q=80"
                     alt="5th">
-                <span class="label">architecture</span>
-                <div class="hidden-item">
+                <span class="grid__label">architecture</span>
+                <div class="grid--hidden-item">
                     <span>La boutique du musée de La Poste</span>
                     <span>Complètement timbré</span>
                 </div>
             </section>
-            <section class="grid__content grid__content-6th">
+            <section class="grid__content grid__content--6th">
                 <div class="title">
                     <p>L’école</p>
                     <p>de la</p>
@@ -82,19 +87,96 @@
                     <span class="ellipse__icon ellipse__icon-left"><i class="fas fa-long-arrow-alt-left"></i></span>
                 </div>
             </section>
-            <section class=" grid__content grid__content--hidden grid__content-7th">
-                <img src="https://images.unsplash.com/photo-1548855601-988fdac64d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+            <section class=" grid__content grid__content--7th grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1548855601-988fdac64d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
                     alt="6th">
-                <span class="label">architecture</span>
-                <div class="hidden-item">
+                <span class="grid__label">architecture</span>
+                <div class="grid--hidden-item">
                     <span>ibis</span>
                     <span>ibis change de styles</span>
                 </div>
             </section>
+            <section class=" grid__content grid__content--8th grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=798&q=80"
+                    alt="8th">
+                <span class="grid__label">architecture</span>
+                <div class="grid--hidden-item">
+                    <span>
+                        Carrefour Sources
+                    </span>
+                    <span>un concept 100% clean beauty, yes baby</span>
+                </div>
+            </section>
+            <section class="grid__content grid__content--9th grid--content-news">
+                <p>news</p>
+                <h2 class="title">Le marketing est mort : place au contributing</h2>
+            </section>
+            <section class="grid__content grid__content--10th">
+                <h2 class="subtitle">On a pas</h2>
+                <h3 class="title">tous les jours</h3>
+                <div class="year">
+                    <span class="year-left">2</span>
+                    <div class="year-right">
+                        <p>A</p>
+                        <p>N</p>
+                        <p>S</p>
+                    </div>
+                </div>
+            </section>
+            <section class=" grid__content grid__content--11th grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1519822472072-ec86d5ab6f5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="11th">
+                <span class="grid__label">architecture</span>
+                <div class="grid--hidden-item">
+                    <span>La Table des Producteurs</span>
+                    <span>se rapprocher pour mieux manger</span>
+                </div>
+            </section>
+            <section class=" grid__content grid__content--12th grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1531124530521-938fb8be39d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80"
+                    alt="12th">
+                <span class="grid__label">advertising & content</span>
+                <div class="grid--hidden-item">
+                    <span>Paris Aéroport</span>
+                    <span>fake taxi</span>
+                </div>
+            </section>
+            <section class=" grid__content grid__content--13th grid__content--hidden">
+                <img class="grid__img"
+                    src="https://images.unsplash.com/photo-1517816428104-797678c7cf0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="13th">
+                <span class="grid__label">branding</span>
+                <div class="grid--hidden-item">
+                    <span>MAIF</span>
+                    <span>une marque en mouvement</span>
+                </div>
+            </section>
+            <section class="grid__content grid__content--14th grid--content-news">
+                <p>news</p>
+                <h2 class="title">Future Of Sport</h2>
+            </section>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__location">
+            <span class="footer__address">W&Cie, 1 cours de l'ile Seguin, 92650 Boulogne-Billancourt</span>
+            <span class="footer__phone">-> 01 72 27 00 00</span>
+        </div>
+        <div class="footer__logo logo">
+            <span class="footer__logo--bar logo--bar">ㅡ</span>
+            <h1 class="footer__logo--w logo--w">W</h1>
+        </div>
+        <div>
+            <ul class="footer__navigation">
+                <li>L'école de la marque W</li>
+                <li>La Maison W</li>
+                <li>Contact</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
