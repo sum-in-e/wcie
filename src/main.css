@@ -3,7 +3,7 @@ main {
     padding-bottom: 10vh;
 }
 
-main .grids {
+main .grid-container {
     padding-left: 1.5vw;
     width: 100%;
     display: grid;
@@ -12,20 +12,14 @@ main .grids {
     gap: 1.5vw;
 } 
 
-.grids .grid__content {
+.grid-container .grid__content {
     cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 
-/* -----grid__content--hidden----- */
-.grids .grid__content--hidden .grid__img {
-    width: 100%;
-    height: 100%;
-    transition : all 0.5s;
-}
-
-.grids .grid__content .grid__label {
+/* -----grid__content grid__label----- */
+.grid-container .grid__content .grid__label {
     padding : 0.7rem 0.4rem ;
     background-color: white;
     text-transform: uppercase;
@@ -39,30 +33,38 @@ main .grids {
     z-index: 10;
 }
 
-.grids .grid__content--hidden .grid--hidden-item {
+/* -----grid__content--hidden----- */
+.grid-container .grid__content--hidden .grid__img {
+    width: 100%;
+    height: 100%;
+    transition : all 0.5s;
+}
+
+
+.grid-container .grid__content--hidden .grid--hidden-item {
     display: none;
 }
 
-.grids .grid__content .grid--hidden-item span:first-child {
+.grid-container .grid__content .grid--hidden-item span:first-child {
     font-size: 2.5rem;
     font-weight: 900;
     color: white;
     margin-bottom: 1rem;
 }
 
-.grids .grid__content .grid--hidden-item span:last-child {
+.grid-container .grid__content .grid--hidden-item span:last-child {
     font-size: 0.8rem;
     font-weight: 700;
     color : rgb(121, 121, 121);
     text-transform: uppercase;
 }
 
-.grids .grid__content--hidden:hover .grid__img {
+.grid-container .grid__content--hidden:hover .grid__img {
     transition: transform ease-in-out 0.3s;
     transform: scale(1.2, 1.2);
 }
 
-.grids .grid__content--hidden:hover .grid--hidden-item {
+.grid-container .grid__content--hidden:hover .grid--hidden-item {
     width: 100%;
     height: 100%;
     padding : 7rem;
@@ -96,7 +98,7 @@ main .grids {
 }
 
 /* -----content--1st----- */
-.grids .grid__content--1st {
+.grid-container .grid__content--1st {
     background-color: #FFDF40;
     padding : 3rem;
     grid-column: 1 / 5;
@@ -106,12 +108,12 @@ main .grids {
     justify-content: space-between;
 }
 
-.grids .grid__content--1st .title {
+.grid-container .grid__content--1st .title {
     font-weight: 900;
     font-size: 4rem;
 }
 
-.grids .grid__content--1st .button {
+.grid-container .grid__content--1st .button {
     width: 4rem;
     height: 4rem;
     background-color: white;
@@ -126,30 +128,30 @@ main .grids {
     transition-delay: 0.1s;
 }
 
-.grids .grid__content--1st:hover .button {
+.grid-container .grid__content--1st:hover .button {
     transition: transform ease-in-out 0.3s;
     transform: scale(1.2, 1.2);
 }
 
-.grids .grid__content--1st:hover .button span {
+.grid-container .grid__content--1st:hover .button span {
     transition: transform ease-in-out 0.1s;
     transform: translateX(45px);
 }
 
 /* -----content--2nd----- */
-.grids .grid__content--2nd {
+.grid-container .grid__content--2nd {
     grid-column: 5 / span 5;
     grid-row: 2 / span 4;
 }
 
 /* -----content--3rd----- */
-.grids .grid__content--3rd {
+.grid-container .grid__content--3rd {
     grid-column: 2 / span 3;
     grid-row: 5 / span 3;
 }
 
 /* -----content--4th----- */
-.grids .grid__content--4th {
+.grid-container .grid__content--4th {
     grid-column: 1 / span 4;
     grid-row: 8 / span 2;
     font-size: 4rem;
@@ -158,19 +160,19 @@ main .grids {
     padding : 1rem;
 }
 
-.grids .grid__content--4th .subtitle {
+.grid-container .grid__content--4th .subtitle {
     color : #FFDF40;
     padding-top: 2rem;
 }
 
 /* -----content--5th----- */
-.grids .grid__content--5th {
+.grid-container .grid__content--5th {
     grid-column: 5 / span 4;
     grid-row: 6 / span 4;
 }
 
 /* -----content--6th----- */
-.grids .grid__content--6th {
+.grid-container .grid__content--6th {
     grid-column: 1 / span 3;
     grid-row: 10 / span 4;
     background-color: black;
@@ -183,7 +185,7 @@ main .grids {
     justify-content: space-around;
 }
 
-.grid__content--6th .title {
+.grid-container .grid__content--6th .title {
     font-size: 0.8rem;
     font-weight: 700;
     color : rgb(161, 161, 161);
@@ -192,13 +194,13 @@ main .grids {
     line-height: 1rem;
 }
 
-.grid__content--6th .subtitle {
+.grid-container .grid__content--6th .subtitle {
     font-size: 2.2rem;
     font-weight: 900;
     padding : 0 2rem 1rem 2rem;
 }
 
-.grid__content--6th .ellipse {
+.grid-container .grid__content--6th .ellipse {
     width: 20vw;
     height: 20vw;
     border-radius: 20rem;
@@ -208,70 +210,70 @@ main .grids {
     transform: rotate(-30deg);
 }
 
-.grid__content--6th .ellipse .ellipse__icon {
+.grid-container .grid__content--6th .ellipse .ellipse__icon {
     font-size: 20vw;
     position: absolute;
     transition : all 0.4s;
 }
 
-.grid__content--6th .ellipse .ellipse__icon-right {
+.grid-container .grid__content--6th .ellipse .ellipse__icon-right {
     top:-3.2rem;
     left: -1.7rem;
 }
 
-.grid__content--6th .ellipse .ellipse__icon-left {
+.grid-container .grid__content--6th .ellipse .ellipse__icon-left {
     top: 3.2rem;
     right: -1.7rem;
 }
 
-.grids .grid__content--6th:hover .ellipse__icon-right {
+.grid-container .grid__content--6th:hover .ellipse__icon-right {
     transition: transform ease-in-out 0.4s;
     transform: translateX(1.8rem);
 }
 
-.grids .grid__content--6th:hover .ellipse__icon-left {
+.grid-container .grid__content--6th:hover .ellipse__icon-left {
     transition: transform ease-in-out 0.4s;
     transform: translateX(-1.8rem);
 }
 
 /* -----content--7th----- */
-.grids .grid__content--7th {
+.grid-container .grid__content--7th {
     grid-column: 4 / span 4;
     grid-row: 10 / span 4;
 }
 
 /* -----content--8th----- */
-.grids .grid__content--8th {
+.grid-container .grid__content--8th {
     grid-column: 2 / span 3;
     grid-row: 14 / span 3;
 }
 
 /* -----content--9th----- */
-.grids .grid__content--9th {
+.grid-container .grid__content--9th {
     grid-column: 5 / span 2;
     grid-row: 14 / span 2;
 }
 
 /* -----content-news----- */
-.grids .grid--content-news {
+.grid-container .grid--content-news {
     background-color: rgb(245, 245, 245);
     padding : 2rem;
 }
 
-.grids .grid--content-news p {
+.grid-container .grid--content-news p {
     padding-bottom: 0.5rem;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.grids .grid--content-news .title {
+.grid-container .grid--content-news .title {
     font-size: 1.8rem;
     font-weight: 700;
 }
 
 /* -----content--10th----- */
-.grids .grid__content--10th {
+.grid-container .grid__content--10th {
     grid-column: 7 / span 2;
     grid-row: 14 / span 2;
     background-color: #FFDF40;
@@ -282,31 +284,31 @@ main .grids {
     justify-content: space-around;
 }
 
-.grid__content--10th .subtitle {
+.grid-container .grid__content--10th .subtitle {
     font-size: 2.5rem;
     font-weight: 900;
     padding-bottom: 0.5rem;
 }
 
-.grid__content--10th .title {
+.grid-container .grid__content--10th .title {
     font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.grid__content--10th .year {
+.grid-container .grid__content--10th .year {
     display: flex;
     align-items: center;
     position: relative;
     top: -0.5rem;
 }
 
-.grid__content--10th .year .year-left {
+.grid-container .grid__content--10th .year .year-left {
     font-size: 10em;
     font-weight: 900;
 }
 
-.grid__content--10th .year .year-right {
+.grid-container .grid__content--10th .year .year-right {
     background-color: black;
     padding: 3rem;
     width: 5rem;
@@ -322,25 +324,25 @@ main .grids {
 }
 
 /* -----content--11th----- */
-.grids .grid__content--11th {
+.grid-container .grid__content--11th {
     grid-column: 5 / span 5;
     grid-row: 16 / span 4;
 }
 
 /* -----content--12th----- */
-.grids .grid__content--12th {
+.grid-container .grid__content--12th {
     grid-column: 1 / span 4;
     grid-row: 17 / span 4;
 }
 
 /* -----content--13th----- */
-.grids .grid__content--13th {
+.grid-container .grid__content--13th {
     grid-column: 5 / span 3;
     grid-row: 20 / span 3;
 }
 
 /* -----content--14th----- */
-.grids .grid__content--14th {
+.grid-container .grid__content--14th {
     grid-column: -3 / span 2;
     grid-row: 20 / span 2;
 }
