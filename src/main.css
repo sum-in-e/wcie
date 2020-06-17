@@ -41,18 +41,18 @@ main .grid-container {
 }
 
 
-.grid-container .grid__content--hidden .grid--hidden-item {
+.grid-container .grid__content--hidden .grid__preview {
     display: none;
 }
 
-.grid-container .grid__content .grid--hidden-item span:first-child {
+.grid-container .grid__content .grid__preview span:first-child {
     font-size: 2.5rem;
     font-weight: 900;
     color: white;
     margin-bottom: 1rem;
 }
 
-.grid-container .grid__content .grid--hidden-item span:last-child {
+.grid-container .grid__content .grid__preview span:last-child {
     font-size: 0.8rem;
     font-weight: 700;
     color : rgb(121, 121, 121);
@@ -64,7 +64,7 @@ main .grid-container {
     transform: scale(1.2, 1.2);
 }
 
-.grid-container .grid__content--hidden:hover .grid--hidden-item {
+.grid-container .grid__content--hidden:hover .grid__preview {
     width: 100%;
     height: 100%;
     padding : 7rem;
