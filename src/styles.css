@@ -53,12 +53,12 @@ body::-webkit-scrollbar {
     html {
         font-size: 12px;
     }
-    .grid-container .grid__content--6th .ellipse .ellipse__icon-right {
+    .grid-container .grid__content--6th .content-circle .arrow-right {
         top:-3.7rem;
         left: -1.7rem;
     }
     
-    .grid-container .grid__content--6th .ellipse .ellipse__icon-left {
+    .grid-container .grid__content--6th .content-circle .arrow-left {
         top: 3.7rem;
         right: -1.7rem;
     }
@@ -69,36 +69,36 @@ body::-webkit-scrollbar {
     html {
         font-size: 10px;
     }
-    .grid-container .grid__content--1st .title {
+    .grid-container .grid__content--1st .content__title {
         font-size: 3.7rem;
     }
     .grid-container .grid__content--4th {
         font-size: 3.7rem;
     }
-    .grid-container .grid__content--4th .subtitle {
+    .grid-container .grid__content--4th .content__subtitle {
         padding-top: 1.7rem;
     }
-    .grid-container .grid__content--6th .ellipse {
+    .grid-container .grid__content--6th .content-circle {
         width: 18vw;
         height: 18vw;
     }
-    .grid-container .grid__content--6th .ellipse .ellipse__icon {
+    .grid-container .grid__content--6th .content-circle .arrow {
         font-size: 17vw;
         position: absolute;
         transition : all 0.4s;
     }
-    .grid-container .grid__content--6th .ellipse .ellipse__icon-right {
+    .grid-container .grid__content--6th .content-circle .arrow-right {
         top:-3rem;
         left: -1rem;
     }
-    .grid-container .grid__content--6th .ellipse .ellipse__icon-left {
+    .grid-container .grid__content--6th .content-circle .arrow-left {
         top: 3rem;
         right: -1rem;
     }
-    .grid-container .grid__content--6th:hover .ellipse__icon-right {
+    .grid-container .grid__content--6th:hover .content-circle .arrow-right {
         transform: translateX(1.1rem);
     }
-    .grid-container .grid__content--6th:hover .ellipse__icon-left {
+    .grid-container .grid__content--6th:hover .content-circle .arrow-left {
         transform: translateX(-1.1rem);
     }
 }

@@ -109,12 +109,12 @@ main .grid-container {
     justify-content: space-between;
 }
 
-.grid-container .grid__content--1st .title {
+.grid-container .grid__content--1st .content__title {
     font-weight: 900;
     font-size: 4rem;
 }
 
-.grid-container .grid__content--1st .button {
+.grid-container .grid__content--1st .content__btn {
     width: 4rem;
     height: 4rem;
     background-color: white;
@@ -129,12 +129,12 @@ main .grid-container {
     transition-delay: 0.1s;
 }
 
-.grid-container .grid__content--1st:hover .button {
+.grid-container .grid__content--1st:hover .content__btn {
     transition: transform ease-in-out 0.3s;
     transform: scale(1.2, 1.2);
 }
 
-.grid-container .grid__content--1st:hover .button span {
+.grid-container .grid__content--1st:hover .content__btn .btn-arrow {
     transition: transform ease-in-out 0.1s;
     transform: translateX(45px);
 }
@@ -161,7 +161,7 @@ main .grid-container {
     padding : 1rem;
 }
 
-.grid-container .grid__content--4th .subtitle {
+.grid-container .grid__content--4th .content__subtitle {
     color : #FFDF40;
     padding-top: 2rem;
 }
@@ -186,7 +186,7 @@ main .grid-container {
     justify-content: space-around;
 }
 
-.grid-container .grid__content--6th .title {
+.grid-container .grid__content--6th .content__title {
     font-size: 0.8rem;
     font-weight: 700;
     color : rgb(161, 161, 161);
@@ -195,13 +195,13 @@ main .grid-container {
     line-height: 1rem;
 }
 
-.grid-container .grid__content--6th .subtitle {
+.grid-container .grid__content--6th .content__subtitle {
     font-size: 2.2rem;
     font-weight: 900;
     padding : 0 2rem 1rem 2rem;
 }
 
-.grid-container .grid__content--6th .ellipse {
+.grid-container .grid__content--6th .content-circle {
     width: 20vw;
     height: 20vw;
     border-radius: 20rem;
@@ -211,28 +211,28 @@ main .grid-container {
     transform: rotate(-30deg);
 }
 
-.grid-container .grid__content--6th .ellipse .ellipse__icon {
+.grid-container .grid__content--6th .content-circle .arrow {
     font-size: 20vw;
     position: absolute;
     transition : all 0.4s;
 }
 
-.grid-container .grid__content--6th .ellipse .ellipse__icon-right {
+.grid-container .grid__content--6th .content-circle .arrow-right {
     top:-3.2rem;
     left: -1.7rem;
 }
 
-.grid-container .grid__content--6th .ellipse .ellipse__icon-left {
+.grid-container .grid__content--6th .content-circle .arrow-left {
     top: 3.2rem;
     right: -1.7rem;
 }
 
-.grid-container .grid__content--6th:hover .ellipse__icon-right {
+.grid-container .grid__content--6th:hover .content-circle .arrow-right {
     transition: transform ease-in-out 0.4s;
     transform: translateX(1.8rem);
 }
 
-.grid-container .grid__content--6th:hover .ellipse__icon-left {
+.grid-container .grid__content--6th:hover .content-circle .arrow-left {
     transition: transform ease-in-out 0.4s;
     transform: translateX(-1.8rem);
 }
@@ -285,31 +285,31 @@ main .grid-container {
     justify-content: space-around;
 }
 
-.grid-container .grid__content--10th .subtitle {
+.grid-container .grid__content--10th .content__subtitle {
     font-size: 2.5rem;
     font-weight: 900;
     padding-bottom: 0.5rem;
 }
 
-.grid-container .grid__content--10th .title {
+.grid-container .grid__content--10th .content__title {
     font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.grid-container .grid__content--10th .year {
+.grid-container .grid__content--10th .content__number {
     display: flex;
     align-items: center;
     position: relative;
     top: -0.5rem;
 }
 
-.grid-container .grid__content--10th .year .year-left {
+.grid-container .grid__content--10th .content__number .number-left {
     font-size: 10em;
     font-weight: 900;
 }
 
-.grid-container .grid__content--10th .year .year-right {
+.grid-container .grid__content--10th .content__number .number-right {
     background-color: black;
     padding: 3rem;
     width: 5rem;
