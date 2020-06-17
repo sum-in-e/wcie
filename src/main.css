@@ -150,15 +150,15 @@ main .grids {
 
 /* -----content--4th----- */
 .grids .grid__content--4th {
-    grid-column: 2 / span 3;
+    grid-column: 1 / span 4;
     grid-row: 8 / span 2;
     font-size: 4rem;
     font-weight: 900;
     text-align: right;
-    padding : 1rem 0;
+    padding : 1rem;
 }
 
-.grids .grid__content--4th div {
+.grids .grid__content--4th .subtitle {
     color : #FFDF40;
     padding-top: 2rem;
 }
@@ -175,8 +175,12 @@ main .grids {
     grid-row: 10 / span 4;
     background-color: black;
     color : white;
-    padding : 1rem 4rem;
+    padding : 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .grid__content--6th .title {
@@ -189,15 +193,15 @@ main .grids {
 }
 
 .grid__content--6th .subtitle {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 900;
-    padding-bottom: 1rem;
+    padding : 0 2rem 1rem 2rem;
 }
 
 .grid__content--6th .ellipse {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 10rem;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20rem;
     background-color: #FFDF40;
     position: relative;
     overflow: hidden;
@@ -205,29 +209,29 @@ main .grids {
 }
 
 .grid__content--6th .ellipse .ellipse__icon {
-    font-size: 20rem;
+    font-size: 20vw;
     position: absolute;
     transition : all 0.4s;
 }
 
 .grid__content--6th .ellipse .ellipse__icon-right {
-    top:-55px;
-    left: -27px;
+    top:-3.2rem;
+    left: -1.7rem;
 }
 
 .grid__content--6th .ellipse .ellipse__icon-left {
-    top: 55px;
-    right: -27px;
+    top: 3.2rem;
+    right: -1.7rem;
 }
 
 .grids .grid__content--6th:hover .ellipse__icon-right {
     transition: transform ease-in-out 0.4s;
-    transform: translateX(30px);
+    transform: translateX(1.8rem);
 }
 
 .grids .grid__content--6th:hover .ellipse__icon-left {
     transition: transform ease-in-out 0.4s;
-    transform: translateX(-30px);
+    transform: translateX(-1.8rem);
 }
 
 /* -----content--7th----- */
@@ -271,20 +275,21 @@ main .grids {
     grid-column: 7 / span 2;
     grid-row: 14 / span 2;
     background-color: #FFDF40;
-    padding: 1.5rem;
+    padding: 2rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .grid__content--10th .subtitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 900;
     padding-bottom: 0.5rem;
 }
 
 .grid__content--10th .title {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -297,15 +302,15 @@ main .grids {
 }
 
 .grid__content--10th .year .year-left {
-    font-size: 12em;
+    font-size: 10em;
     font-weight: 900;
 }
 
 .grid__content--10th .year .year-right {
     background-color: black;
     padding: 3rem;
-    width: 7rem;
-    height: 8.5rem;
+    width: 5rem;
+    height: 7.3rem;
     border-radius: 50%;
     color : #FFDF40;
     font-size: 2rem;

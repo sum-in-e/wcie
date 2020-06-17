@@ -18,6 +18,7 @@
 
 .footer .footer__location .footer__phone {
     color : rgb(95, 95, 95);
+    padding-top: 0.3rem;
 }
 
 .footer .footer__navigation {
@@ -26,4 +27,5 @@
 
 .footer .footer__navigation > * {
     padding-left: 2rem;
+    cursor: pointer;
 }
