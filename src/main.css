@@ -18,15 +18,15 @@ main .grid-container {
     overflow: hidden;
 }
 
-/* -----grid__img----- */
-.grid-container .grid__content .grid__img {
+/* -----content__img----- */
+.grid-container .grid__content .content__img {
     width: 100%;
     height: 100%;
     transition : all 0.5s;
 }
 
-/* -----grid__label----- */
-.grid-container .grid__content .grid__label {
+/* -----content__label----- */
+.grid-container .grid__content .content__label {
     padding : 0.7rem 0.4rem ;
     background-color: white;
     text-transform: uppercase;
@@ -40,19 +40,19 @@ main .grid-container {
     z-index: 10;
 }
 
-/* -----grid__preview----- */
-.grid-container .grid__content .grid__preview {
+/* -----content__preview----- */
+.grid-container .grid__content .content__preview {
     display: none;
 }
 
-.grid-container .grid__content .grid__preview .preview__subtitle {
+.grid-container .grid__content .content__preview .preview__subtitle {
     font-size: 2.5rem;
     font-weight: 900;
     color: white;
     margin-bottom: 1rem;
 }
 
-.grid-container .grid__content .grid__preview .preview__title {
+.grid-container .grid__content .content__preview .preview__title {
     font-size: 0.8rem;
     font-weight: 700;
     color : rgb(121, 121, 121);
@@ -60,12 +60,12 @@ main .grid-container {
 }
 
 /* -----hover----- */
-.grid-container .grid__content:hover .grid__img {
+.grid-container .grid__content:hover .content__img {
     transition: transform ease-in-out 0.3s;
     transform: scale(1.2, 1.2);
 }
 
-.grid-container .grid__content:hover .grid__preview {
+.grid-container .grid__content:hover .content__preview {
     width: 100%;
     height: 100%;
     padding : 7rem;
