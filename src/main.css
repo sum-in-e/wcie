@@ -45,14 +45,14 @@ main .grid-container {
     display: none;
 }
 
-.grid-container .grid__content .grid__preview span:first-child {
+.grid-container .grid__content .grid__preview .preview__subtitle {
     font-size: 2.5rem;
     font-weight: 900;
     color: white;
     margin-bottom: 1rem;
 }
 
-.grid-container .grid__content .grid__preview span:last-child {
+.grid-container .grid__content .grid__preview .preview__title {
     font-size: 0.8rem;
     font-weight: 700;
     color : rgb(121, 121, 121);
