@@ -16,9 +16,12 @@
 .header .header__navigation {
     font-weight: 900;
     font-size: 1.2rem;
-    cursor: pointer;
     position: relative;
     bottom: -4rem;
+}
+
+.header .header__navigation .header__menu {
+    cursor: pointer;
 }
 
 .header .header__text {
