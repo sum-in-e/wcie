@@ -55,7 +55,7 @@ main .grid-container {
 .grid-container .grid__content .content__preview .preview__title {
     font-size: 0.8rem;
     font-weight: 700;
-    color : rgb(121, 121, 121);
+    color : rgb(165, 165, 165);
     text-transform: uppercase;
 }
 
