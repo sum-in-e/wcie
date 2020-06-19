@@ -24,6 +24,10 @@ main .grid-container {
     height: 100%;
     transition : all 0.5s;
 }
+.grid-container .grid__content:hover .content__img {
+    transition: transform ease-in-out 0.3s;
+    transform: scale(1.2, 1.2);
+}
 
 /* -----content__label----- */
 .grid-container .grid__content .content__label {
@@ -57,12 +61,6 @@ main .grid-container {
     font-weight: 700;
     color : rgb(165, 165, 165);
     text-transform: uppercase;
-}
-
-/* -----hover----- */
-.grid-container .grid__content:hover .content__img {
-    transition: transform ease-in-out 0.3s;
-    transform: scale(1.2, 1.2);
 }
 
 .grid-container .grid__content:hover .content__preview {
