@@ -81,6 +81,7 @@ main .grid-container {
     animation: hidden 0.4s linear;
     cursor: url(../src/images/cursor.cur), auto;
 }
+
 @keyframes hidden {
     0% {
         display: none;
