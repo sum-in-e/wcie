@@ -5,45 +5,19 @@
 @import "footer.css";
 @import "responsive.css";
 
-*{
-    box-sizing: border-box;
-    user-select: none;
+* {
+  box-sizing: border-box;
+  user-select: none;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Poppins', sans-serif;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-
-
-/* ------logo------ */
-.logo {
-    font-size: 4rem;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo > * {
-    cursor: pointer;
-}
-
-.logo-bar {
-    font-size: 3.5rem;
-    color : #FFDF40;
-    transform: rotate(170deg);
-}
-
-.logo-w {
-    position: relative;
-    top: -1.5rem;
-}
-
