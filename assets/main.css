@@ -272,6 +272,8 @@ main .grid-container {
 .grid__news .news__title {
   font-size: 1.8rem;
   font-weight: 700;
+  word-break: normal;
+  word-wrap: break-word;
 }
 
 /* -----content--10th----- */

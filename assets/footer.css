@@ -16,6 +16,11 @@
   flex-direction: column;
 }
 
+.footer .footer__address {
+  word-break: normal;
+  word-wrap: break-word;
+}
+
 .footer .footer__location .footer__phone {
   padding-top: 0.3rem;
   color: rgb(95, 95, 95);
@@ -26,6 +31,6 @@
 }
 
 .footer .footer__navigation > * {
-  padding-left: 2rem;
+  margin-left: 2rem;
   cursor: pointer;
 }

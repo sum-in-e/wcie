@@ -63,7 +63,7 @@
 }
 
 /* 태블릿 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .logo {
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@
   }
 
   .grid-container .grid__content--1st {
-    height: 88vh;
+    height: 65vh;
     padding: 4rem;
   }
 
@@ -320,10 +320,18 @@
   .footer .footer__location {
     padding-bottom: 2rem;
   }
+
+  .footer .footer__navigation {
+    justify-content: space-between;
+  }
+
+  .footer .footer__navigation > * {
+    margin: 0 2rem;
+  }
 }
 
 /* 모바일 */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   html {
     font-size: 8px;
   }
@@ -367,5 +375,10 @@
   .grid-container .grid__content--10th .content__title {
     position: static;
     font-size: 2.8rem;
+  }
+
+  .footer .footer__navigation > * {
+    margin: 0;
+    width: 30%;
   }
 }
