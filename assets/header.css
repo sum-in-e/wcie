@@ -13,33 +13,7 @@
   background-color: white;
 }
 
-.header .header__navigation {
-  position: relative;
-  bottom: -4rem;
-  font-weight: 900;
-  font-size: 1.2rem;
-}
-
-.header .header__navigation .header__menu {
-  cursor: pointer;
-}
-
-.header .header__text {
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-.header .header__text span:nth-child(2) {
-  color: #ffdf40;
-  font-weight: 700;
-}
-
-.header .header-rotate {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-}
-
-/* ------logo------ */
+/* ------ logo ------ */
 .logo {
   display: flex;
   flex-direction: column;
@@ -61,4 +35,31 @@
 .logo-w {
   position: relative;
   top: -1.5rem;
+}
+
+/* ------ navigation ------ */
+.header .header__navigation {
+  position: relative;
+  bottom: -4rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.header .header__navigation .header__menu {
+  cursor: pointer;
+}
+
+/* ------ text ------ */
+.header .header__text {
+  font-weight: 500;
+  font-size: 1.1rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.header .header__text span:nth-child(2) {
+  color: #ffdf40;
+  font-weight: 700;
 }
