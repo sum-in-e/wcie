@@ -48,6 +48,7 @@
 }
 
 .header .header__navigation .header__menu {
+  font-size: 1.3rem;
   cursor: pointer;
 }
 

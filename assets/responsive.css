@@ -1,5 +1,5 @@
 /* 1280px 이하 */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1355px) {
   html {
     font-size: 12px;
   }
@@ -15,7 +15,7 @@
 }
 
 /* 991px 이하 */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1080px) {
   html {
     font-size: 10px;
   }
@@ -63,12 +63,12 @@
 }
 
 /* 태블릿 */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 835px) {
   .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 500;
     order: -1;
   }
@@ -92,6 +92,11 @@
     writing-mode: inherit;
     transform: none;
   }
+
+  .header .header__navigation .header__menu {
+    font-size: 2rem;
+  }
+
   .header .header__text {
     display: none;
     writing-mode: inherit;
@@ -121,13 +126,20 @@
   .grid-container .grid__content--1st .content__title {
     line-height: 4.5rem;
   }
+  .grid-container .grid__content--1st .content__btn {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 3.5rem;
+    font-size: 3.5rem;
+  }
 
   .grid-container .grid__content .content__img {
     transition: none;
   }
 
   .grid-container .grid__content .content__label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.7rem;
   }
 
   .grid-container .grid__content .content__preview {

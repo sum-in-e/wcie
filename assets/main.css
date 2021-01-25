@@ -81,7 +81,7 @@ main .grid-container {
   text-align: center;
   opacity: 85%;
   animation: hidden 0.4s linear;
-  cursor: url(../src/images/cursor.cur), auto;
+  cursor: pointer;
 }
 
 @keyframes hidden {
