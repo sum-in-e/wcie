@@ -6,7 +6,7 @@
 
 <br>
 
-## [Go to Preview](https://www.notion.so/Preview-Wcie-a1743a7386bb4ddbbc5ee2a9bc9fa049)
+## [Go to preview](https://www.notion.so/Preview-Wcie-a1743a7386bb4ddbbc5ee2a9bc9fa049)
 
 ![Main Page Screenshot](/assets/image/screenshot.png)
 
