@@ -8,6 +8,8 @@
 
 ## [Go to preview](https://www.notion.so/Preview-Wcie-a1743a7386bb4ddbbc5ee2a9bc9fa049)
 
+## [Go to website](http://wcie.s3-website.ap-northeast-2.amazonaws.com/)
+
 ![Main Page Screenshot](/assets/image/screenshot.png)
 
 [벤치마킹 웹사이트 : https://www.wcie.fr](https://www.wcie.fr)
